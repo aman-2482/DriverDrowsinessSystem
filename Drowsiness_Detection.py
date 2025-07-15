@@ -8,7 +8,8 @@ import cv2
 
 mixer.init()
 mixer.music.load("music.wav")
-
+# Initialize Pygame mixer for alert sound
+# Function to calculate the Eye Aspect Ratio (EAR)
 def eye_aspect_ratio(eye):
 	A = distance.euclidean(eye[1], eye[5])
 	B = distance.euclidean(eye[2], eye[4])

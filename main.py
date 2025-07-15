@@ -6,10 +6,12 @@ from imutils import face_utils
 from scipy.spatial import distance
 from pygame import mixer
 
-# Initialize Pygame mixer for alert sound
+
+
+
 mixer.init()
 mixer.music.load("music.wav")
-
+# Initialize Pygame mixer for alert sound
 # Function to calculate the Eye Aspect Ratio (EAR)
 def eye_aspect_ratio(eye):
     A = distance.euclidean(eye[1], eye[5])
